@@ -1,0 +1,15 @@
+name: comfyui_dart_sdk
+description: A Dart SDK for interacting with the ComfyUI API and WebSocket.
+version: 1.0.0
+homepage: https://github.com/queiul/comfyui_dart_sdk
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  dio: ^4.0.0
+  web_socket_channel: ^2.1.0
+
+dev_dependencies:
+  test: ^1.16.0
+  mockito: ^5.4.4
+  build_runner: ^2.4.13
