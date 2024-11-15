@@ -24,7 +24,7 @@ class ComfySocket {
   }
 
   /// Establishes a WebSocket connection with the given URL and client ID.
-  static Future<ComfySocket> connect(String url, String clientId) async {
+  static ComfySocket connect(String url, String clientId) {
     final validUrl = _ensureWebSocketUrl(
         "${url.endsWith('/') ? url : '$url/'}ws?clientId=$clientId");
     final uri = Uri.parse(validUrl);
